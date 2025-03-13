@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+:root {
+  --pColor: #ffa500;
+  --dColor: #222222;
+  --lColor: #eaeaea;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+a {
+  color: var(--pColor);
+}
+
+header {
+  background-color: var(--dColor);
+  color: white;
+  padding: 1.5rem 0;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav li {
+  display: inline;
+  margin: 0 0.3rem;
+}
+
+nav a {
+  font-weight: 700;
+}
+
+.hero {
+  background-image: url(./img/pexels-narda-yescas-1566837.jpg);
+  background-size: cover;
+  color: white;
+  min-height: 75vh;
+  padding: 10rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 100;
+}
+
+.hero p {
+  font-size: 1.5em;
+  margin-top: 1.5rem;
+}
+
+.cta-button {
+  background-color: var(--pColor);
+  border-radius: 0.5rem;
+  color: var(--dColor);
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  display: inline-block;
+  margin-top: 1.5rem;
+}
+
+section:not(#home) {
+  padding: 4rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+.menu-list > li {
+  background-color: var(--lColor);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px -4px rgb(0, 0, 0, 0.5);
+  margin: 1.5rem;
+  display: inline-block;
+  height: 28rem;
+  width: 28rem;
+}
+
+.menu-list img {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  object-fit: cover;
+  width: 100%;
+}
+
+.menu-list h3,
+.menu-list p {
+  padding: 1rem 1.25 0;
+}
